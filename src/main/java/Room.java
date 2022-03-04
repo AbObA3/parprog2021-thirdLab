@@ -17,8 +17,8 @@ public class Room implements Runnable{
     }
 
     public void changeCurrentValues(){
-        currentHum = currentHum+Math.random()-0.5;
-        currentTemp = currentTemp+Math.random()-0.5;
+
+        currentTemp = currentTemp+Math.random()*2-1;
     }
 
     public double getCurrentTemp(){ return currentTemp; }
